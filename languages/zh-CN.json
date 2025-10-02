@@ -218,7 +218,7 @@
     "aiAssistant.builder.canvasPrompt.cancelButton": "取消",
     "aiAssistant.builder.canvasPrompt.startManually.title": "手动开始",
     "aiAssistant.builder.canvasPrompt.startManually.subTitle": "添加第一个节点",
-    "aiAssistant.builder.streamAbortedMessage": "[任务已中止]",
+    "aiAssistant.builder.streamAbortedMessage": "任务被中止",
     "aiAssistant.builder.executeMessage.description": "在执行你的工作流之前，请完成以下步骤：",
     "aiAssistant.builder.executeMessage.noIssues": "您的工作流已准备好执行。",
     "aiAssistant.builder.executeMessage.validationTooltip": "在执行之前完成上述步骤",
