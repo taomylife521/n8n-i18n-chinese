@@ -138,11 +138,6 @@ jobs:
         head -n 30 /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n/packages/frontend/@n8n/i18n/src/index.ts
       working-directory: /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n
 
-
-    - name: Set pnpm resolution mode
-      if: steps.check_tag.outputs.exists == 'false'
-      run: echo "resolution-mode=highest" >> /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n/.npmrc
-
     - name: Pnpm build editor-ui
       if: steps.check_tag.outputs.exists == 'false'
       run: pnpm run build
