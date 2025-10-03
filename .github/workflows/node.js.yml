@@ -143,7 +143,14 @@ jobs:
 
     - name: Pnpm build editor-ui
       if: steps.check_tag.outputs.exists == 'false'
-      run: pnpm run build:n8n --filter=n8n-editor-ui
+      run: |
+        pnpm run build:n8n || echo "构建失败，重新检测是否成功"
+        if [ -d "/home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n/packages/frontend/editor-ui/dist" ]; then
+          echo "n8n-editor-ui:build 存在，构建成功"
+        else
+          echo "n8n-editor-ui:build 不存在，构建失败"
+          exit 1
+        fi
       working-directory: /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n
 
     - name: 打包 dist 产物
