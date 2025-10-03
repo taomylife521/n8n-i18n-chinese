@@ -102,8 +102,9 @@ jobs:
       if: steps.check_tag.outputs.exists == 'false'
       uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
       with:
-        run_install: true
-        cwd: /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n
+        run_install: |
+            - cwd: /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n
+              args: []
 
     - name: Configure Turborepo Cache
       if: steps.check_tag.outputs.exists == 'false'
