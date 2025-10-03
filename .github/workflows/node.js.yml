@@ -144,7 +144,7 @@ jobs:
     - name: Pnpm build editor-ui
       if: steps.check_tag.outputs.exists == 'false'
       run: pnpm run build:n8n --filter=n8n-editor-ui
-      working-directory: /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n/packages/frontend/editor-ui
+      working-directory: /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n
 
     - name: 打包 dist 产物
       if: steps.check_tag.outputs.exists == 'false'
