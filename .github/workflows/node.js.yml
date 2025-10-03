@@ -92,15 +92,22 @@ jobs:
         repository: n8n-io/n8n
         ref: ${{ steps.latest_release.outputs.latest }}
         path: ./n8n
-
-    - uses: actions/setup-node@v4.2.0
+      
+    - uses: actions/setup-node@v4.4.0
       if: steps.check_tag.outputs.exists == 'false'
       with:
         node-version: 22.x
 
-    - run: pnpm install --frozen-lockfile
+    - name: Setup pnpm and Install Dependencies
       if: steps.check_tag.outputs.exists == 'false'
-      working-directory: /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n
+      uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
+      with:
+        run_install: true
+        cwd: /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n
+
+    - name: Configure Turborepo Cache
+      if: steps.check_tag.outputs.exists == 'false'
+      uses: rharkor/caching-for-turbo@2b4b5b14a8d16b8556a58993a8ac331d56d8906d # v2.3.2
 
     - name: check n8n editor-ui is old
       id: editorui_dir
@@ -137,10 +144,11 @@ jobs:
         echo "==== /packages/frontend/@n8n/i18n/src/index.ts 内容 ===="
         head -n 30 /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n/packages/frontend/@n8n/i18n/src/index.ts
       working-directory: /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n
-
+        
     - name: Pnpm build editor-ui
       if: steps.check_tag.outputs.exists == 'false'
-      run: pnpm run build:n8n --filter=n8n-editor-ui
+      run: pnpm run build:n8n
+      shell: bash
       working-directory: /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n
 
     - name: 打包 dist 产物
