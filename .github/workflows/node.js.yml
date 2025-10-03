@@ -14,7 +14,7 @@ jobs:
     environment: test
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [22.x]
     steps:
     - name: Get latest N8N release version
       id: latest_release
