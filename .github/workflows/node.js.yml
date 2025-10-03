@@ -99,6 +99,7 @@ jobs:
         node-version: 22.x
 
     - name: Set pnpm resolution mode
+      if: steps.check_tag.outputs.exists == 'false'
       run: echo "resolution-mode=highest" >> /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n/.npmrc
 
     - run: pnpm install --frozen-lockfile
