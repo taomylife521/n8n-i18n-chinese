@@ -32,15 +32,13 @@ jobs:
           echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV
           echo "Extracted version: $VERSION"
 
-      - name: Build and push Docker image
+      - name: Build and push multi-arch Docker images
         run: |
-          docker build \
+          # 构建并直接推送 multi-arch 镜像（amd64 + arm64）
+          docker buildx build \
+            --platform linux/amd64,linux/arm64 \
             --build-arg VERSION=$RELEASE_VERSION \
             -t blowsnow/n8n-chinese:$RELEASE_VERSION \
             -t blowsnow/n8n-chinese:latest \
+            --push \
             .
-
-          docker push blowsnow/n8n-chinese:$RELEASE_VERSION
-          
-          docker push blowsnow/n8n-chinese:latest
-
