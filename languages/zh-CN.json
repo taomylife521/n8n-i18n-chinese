@@ -2966,7 +2966,6 @@
     "workflows.empty.preBuiltAgents": "尝试一个预构建的代理",
     "workflows.empty.shared-with-me": "没有与您共享任何 {resource}",
     "workflows.empty.shared-with-me.link": "<a href=\"#\">返回个人主页</a>",
-    "workflows.empty.readyToRunV2": "尝试一个 AI 工作流程",
     "workflows.list.easyAI": "用这个简单的AI代理工作流，在n8n中测试人工智能的力量",
     "workflows.list.error.fetching.one": "获取工作流时出错",
     "workflows.list.error.fetching": "获取工作流时出错",
