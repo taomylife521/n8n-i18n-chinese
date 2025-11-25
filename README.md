@@ -26,10 +26,11 @@ n8nio/n8n
 ## npx本地启动n8n替换安装
 > 其他本地方式启动的话参考这个即可
 1. 找到路径：C:\Users\xxxxxx\AppData\Local\npm-cache\_npx\n8n\node_modules\n8n-editor-ui\dist
+   （新版本也可能是C:\Users\xxxxxx\AppData\Roaming\npm\node_modules\n8n\node_modules\n8n-editor-ui\dist）
 2. 下载对应版本editor-ui.tar.gz文件
-4. 解压到 dist目录下替换
-5. 设置环境变量 N8N_DEFAULT_LOCALE=zh-CN，自行咨询AI设置方法
-6. 重启 n8n 服务
+3. 解压到 dist目录下替换
+4. 设置环境变量 N8N_DEFAULT_LOCALE=zh-CN，自行咨询AI设置方法
+5. 重启 n8n 服务
 
 # 原理
 > editor-ui是支持i18n的，但是未开放语言包
