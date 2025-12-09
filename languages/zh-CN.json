@@ -1739,7 +1739,6 @@
     "openWorkflow.workflowImportError": "无法导入工作流",
     "openWorkflow.workflowNotFoundError": "找不到工作流",
     "parameterInput.expressionResult": "例如 {result}",
-    "parameterInput.tip": "提示",
     "parameterInput.dragTipBeforePill": "拖动",
     "parameterInput.inputField": "输入字段",
     "parameterInput.dragTipAfterPill": "从左侧拖动到此处使用。",
