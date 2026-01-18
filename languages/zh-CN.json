@@ -118,6 +118,7 @@
     "generic.credentials": "凭据",
     "generic.workflow": "工作流 | {count} 个工作流 | {count} 个工作流",
     "generic.workflowSaved": "工作流更改已保存",
+    "generic.autosave.retrying": "自动保存失败：{error}\n将在 {retryIn} 后重试...",
     "generic.editor": "编辑器",
     "generic.seePlans": "查看计划",
     "generic.loading": "正在加载",
