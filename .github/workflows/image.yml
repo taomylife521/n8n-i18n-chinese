@@ -27,8 +27,19 @@ jobs:
       - name: Extract version from release tag
         id: extract_version
         run: |
-          RAW_TAG=${GITHUB_REF##*/}
-          VERSION=${RAW_TAG#release/}
+          if [ "${{ github.event_name }}" = "release" ]; then
+            VERSION="${{ github.event.release.tag_name }}"
+            VERSION="${VERSION#release/}"
+          else
+            VERSION=$(curl -s \
+              -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+              https://api.github.com/repos/${{ github.repository }}/releases/latest \
+              | jq -r '.tag_name')
+          
+            VERSION="${VERSION#release/}"
+          fi
+          
+          VERSION="${VERSION#v}"
           echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV
           echo "Extracted version: $VERSION"
 
