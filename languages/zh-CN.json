@@ -4164,6 +4164,8 @@
     "dataTable.addRow.label": "添加行",
     "dataTable.addRow.error": "添加行时出错",
     "dataTable.updateRow.error": "更新行时出错",
+    "dataTable.updateRow.numberPrecisionWarning.title": "数字精度可能会丢失",
+    "dataTable.updateRow.numberPrecisionWarning.message": "超过 9,007,199,254,740,991 的数值可能会丢失精度。如果你需要精确的数值，请将大数字存储为文本。",
     "dataTable.deleteRows.title": "删除行",
     "dataTable.deleteRows.confirmation": "您确定要删除 {count} 行吗？ | 您确定要删除 {count} 行吗？",
     "dataTable.deleteRows.error": "删除行时出错",
