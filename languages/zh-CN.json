@@ -3132,6 +3132,8 @@
     "settings.provisioningConfirmDialog.button.cancel": "取消",
     "settings.provisioningConfirmDialog.button.downloadProjectRolesCsv": "现有项目角色访问设置 CSV",
     "settings.provisioningConfirmDialog.button.downloadInstanceRolesCsv": "现有实例角色设置 CSV",
+    "settings.provisioningConfirmDialog.projectRulesDeletion.warning": "现有的项目映射规则将被永久删除。",
+    "settings.provisioningConfirmDialog.projectRulesDeletion.description": "保存此更改将删除所有项目角色映射规则。请在保存之前下载上方的项目角色 CSV，以便在需要时可以重新创建它们。",
     "settings.provisioningInstanceRolesHandledBySsoProvider.description": "用户管理和实例角色由您的 SSO 提供商控制。请联系您的 n8n 实例所有者或管理员以进行更改。",
     "settings.provisioningInstanceRolesHandledByExpressionMapping.description": "实例角色由基于表达式的角色映射规则自动管理。手动更改角色已禁用。",
     "settings.provisioningProjectRolesHandledBySsoProvider.description": "用户管理和项目角色由您的 SSO 提供商控制。要进行更改，请联系您的 n8n 实例所有者或管理员。",
