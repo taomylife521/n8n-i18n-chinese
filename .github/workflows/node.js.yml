@@ -60,7 +60,7 @@ jobs:
 
     - name: Translate New Strings
       if: steps.check_tag.outputs.exists == 'false'
-      run: pnpm install && node translate.js
+      run: pnpm install && node --input-type=module translate.js
       working-directory: /home/runner/work/n8n-i18n-chinese/n8n-i18n-chinese/n8n-i18n-chinese/script
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
