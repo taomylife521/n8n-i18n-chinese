@@ -14,7 +14,7 @@ jobs:
     environment: test
     strategy:
       matrix:
-        node-version: [22.x]
+        node-version: [18.x]
     steps:
     - name: Get latest N8N release version
       id: latest_release
@@ -23,10 +23,8 @@ jobs:
         echo "Latest release tag: $LATEST_VERSION"
         echo "latest=$LATEST_VERSION" >> $GITHUB_OUTPUT
 
-    - name: Setup corepack and pnpm
-      run: |
-        npm i -g corepack@0.31
-        corepack enable
+    - name: Install pnpm
+      run: npm install -g pnpm@10
 
     - name: Checkout local
       uses: actions/checkout@v4
@@ -96,7 +94,7 @@ jobs:
     - uses: actions/setup-node@v4.2.0
       if: steps.check_tag.outputs.exists == 'false'
       with:
-        node-version: 22.x
+        node-version: 18.x
 
     - name: Set pnpm resolution mode
       if: steps.check_tag.outputs.exists == 'false'
