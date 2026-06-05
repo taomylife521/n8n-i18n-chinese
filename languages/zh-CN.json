@@ -3373,7 +3373,6 @@
     "settings.externalSecrets.actionBox.description.link": "更多信息",
     "settings.externalSecrets.actionBox.buttonText": "查看计划",
     "settings.externalSecrets.card.setUp": "设置",
-    "settings.externalSecrets.card.deprecated": "已弃用",
     "settings.externalSecrets.card.secretsCount": "{count} 秘密 | {count} 秘密",
     "settings.externalSecrets.card.connectedAt": "已连接 {date}",
     "settings.externalSecrets.card.connected": "已启用",
