@@ -6074,7 +6074,6 @@
     "agents.chat.misconfigured.dismiss": "关闭",
     "agents.chat.askCredential.skip": "跳过",
     "agents.chat.toolNames.webSearch": "网页搜索",
-    "agents.chat.toolNames.searchKnowledge": "搜索知识",
     "agents.chat.delegate.label": "子代理 · {name}",
     "agents.chat.delegate.labelFallback": "子代理",
     "agents.chat.delegate.childSuspendUnsupported": "子代理请求用户输入，这在委托执行中尚不支持。",
