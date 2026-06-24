@@ -1351,8 +1351,6 @@
     "executionsList.confirmMessage.annotatedExecutionMessage": "删除此项也会删除关联的注释数据。是否确定要删除选定的执行？",
     "executionsList.error": "错误",
     "executionsList.filters": "筛选器",
-    "executionsList.viewMode.workflows": "工作流程",
-    "executionsList.viewMode.agents": "代理",
     "agentSessions.session": "会话",
     "agentSessions.agentName": "代理",
     "agentSessions.sessionName": "会话",
