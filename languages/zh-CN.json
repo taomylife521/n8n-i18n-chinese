@@ -3664,7 +3664,6 @@
     "nodeIssues.credentials.doNotExist.hint": "您可以创建具有完全相同名称的凭据，然后在刷新时它们会被自动选中。",
     "nodeIssues.credentials.notIdentified": "名称为 {name} 的凭据存在于 {type} 中。",
     "nodeIssues.credentials.notIdentified.hint": "凭据未被明确标识。请选择正确的凭据。",
-    "nodeIssues.credentials.privateRequiresManualTrigger": "私有凭据仅在手动触发的工作流中起作用。请将触发器改为手动触发，或将此凭据切换为静态凭据。",
     "nodeIssues.input.missing": "没有节点连接到必需的输入 \"{inputName}\"",
     "ndv.trigger.moreInfo": "更多信息",
     "ndv.trigger.copiedTestUrl": "测试 URL 已复制到剪贴板",
