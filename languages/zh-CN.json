@@ -1230,8 +1230,6 @@
     "experiments.instanceAiWorkflowPreviewSuggestions.suggestions.scoreMyLeads.prompt": "当在我的 CRM 中创建了一个新的潜在客户时，使用 Lemlist 来丰富该潜在客户的资料，基于契合度对其进行评分；如果符合条件，则更新该潜在客户，并在 Slack 上通知销售团队。",
     "experiments.instanceAiWorkflowPreviewSuggestions.suggestions.processInvoices.label": "处理发票",
     "experiments.instanceAiWorkflowPreviewSuggestions.suggestions.processInvoices.prompt": "每天早上，扫描 Gmail 中的新发票，使用 Claude 提取细节并将其与 Google Sheets 中的采购订单进行核对，若发现差异则标记以供审核，并自动将所有付款到期日添加到 Google 日历。",
-    "experiments.instanceAiWorkflowPreviewSuggestions.suggestions.whatsappSupport.label": "WhatsApp 客服代表",
-    "experiments.instanceAiWorkflowPreviewSuggestions.suggestions.whatsappSupport.prompt": "当客户发送 WhatsApp 消息时，使用 Gemini 将他们的问题与我们在 Google 表格中的常见问题解答进行比对并立即回复。如果无法解决，请在 Notion 中创建一个支持工单，并在 Slack 上提醒团队。",
     "experiments.instanceAiWorkflowPreviewSuggestions.suggestions.scheduleSocialPosts.label": "排程社交媒体帖子",
     "experiments.instanceAiWorkflowPreviewSuggestions.suggestions.scheduleSocialPosts.prompt": "每周一，从 Google 表格读取本周的内容创意，使用 Gemini 撰写定制化内容，然后将它们安排在整周内发布。",
     "experiments.instanceAiWorkflowPreviewSuggestions.suggestions.seeAll": "查看全部",
