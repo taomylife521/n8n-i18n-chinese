@@ -2076,8 +2076,6 @@
     "nodeCredentials.quickConnect.consent.confirm": "确认",
     "nodeCredentials.quickConnect.credential.created.success": "凭据创建成功",
     "nodeCredentials.quickConnect.credential.created.error": "凭据创建失败",
-    "nodeCredentials.emptyState.noCredentials": "尚无凭据",
-    "nodeCredentials.emptyState.setupCredential": "设置凭据",
     "nodeCredentials.oauth.accountConnected": "账户已成功连接",
     "aiGateway.toggle.label": "通过 n8n Connect 连接",
     "aiGateway.toggle.description": "n8n Connect 是管理 AI 模型使用的简便方式",
