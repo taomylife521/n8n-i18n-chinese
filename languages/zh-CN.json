@@ -5794,7 +5794,6 @@
     "instanceAi.tools.workspace_write_file": "正在写入文件",
     "instanceAi.tools.workspace_edit_file": "正在编辑文件",
     "instanceAi.tools.workspace_str_replace_file": "正在编辑文件",
-    "instanceAi.tools.workspace_batch_str_replace_file": "编辑文件",
     "instanceAi.tools.workspace_append_file": "正在追加文件",
     "instanceAi.tools.workspace_list_files": "正在列出文件",
     "instanceAi.tools.workspace_delete": "正在删除文件",
