@@ -1382,7 +1382,6 @@
     "agentSessions.timeline.memoryUpdated": "内存已更新",
     "agentSessions.timeline.openForm": "打开表单",
     "agentSessions.timeline.workflowError": "工作流调用未产生执行",
-    "agentSessions.timeline.nodeError": "工具遇到了一个错误。",
     "agentSessions.timeline.filter": "筛选",
     "agentSessions.timeline.clearFilter": "清除",
     "agentSessions.timeline.suspended": "已暂停",
