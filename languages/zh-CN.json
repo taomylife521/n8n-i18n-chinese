@@ -5409,7 +5409,6 @@
     "instanceAi.connections.row.remove": "移除",
     "instanceAi.connections.row.settings": "设置",
     "instanceAi.connections.row.status.connected": "已连接",
-    "instanceAi.connections.row.status.waiting": "正在等待…",
     "instanceAi.connections.row.status.disconnected": "已断开连接",
     "instanceAi.connections.types.computerUse.subtitle": "计算机使用",
     "instanceAi.connections.types.browserUse.subtitle": "浏览器使用",
