@@ -5414,7 +5414,6 @@
     "instanceAi.browserUse.step.extension.title": "安装 Chrome 浏览器扩展程序",
     "instanceAi.browserUse.step.extension.description": "安装适用于 Google Chrome 的 n8n 浏览器使用扩展，以便代理能够控制您的浏览器。",
     "instanceAi.browserUse.step.extension.cta": "安装 Chrome 扩展程序",
-    "instanceAi.browserUse.step.extension.waiting": "正在等待扩展连接…",
     "instanceAi.error.sendFailed": "消息发送失败",
     "instanceAi.view.reconnecting": "正在重新连接...",
     "instanceAi.agentTree.subAgent": "子代理",
